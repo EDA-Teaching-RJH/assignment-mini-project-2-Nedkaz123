@@ -1,10 +1,14 @@
 # file_handler.py
 
+# This file is responsible for reading and writing student data to a CSV file.
+
 import csv
 
 FILE_NAME = "contacts.csv"
 
 def save_student(student):
+
+    # Saves a student to a CSV file.
 
     with open(FILE_NAME, "a", newline="") as file:
 
@@ -13,6 +17,8 @@ def save_student(student):
         writer.writerow(student.to_list())
 
 def load_students():
+
+    # Loads students from CSV file.
 
     students = []
 

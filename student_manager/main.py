@@ -1,6 +1,9 @@
 # main.py
 
-from student import student
+# This is the main program file.
+# It shows a menu and allows the user to interact with the system.
+
+from student import Student
 from validator import validate_email, validate_phone, validate_student_id
 from file_handler import save_student, load_students
 
@@ -25,7 +28,7 @@ def add_student():
     
     course = input("Enter course: ")
 
-    student = student(name, email, phone, student_id, course)
+    student = Student(name, email, phone, student_id, course)
 
     save_student(student)
 

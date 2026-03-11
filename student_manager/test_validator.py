@@ -1,5 +1,8 @@
 # test_validator.py
 
+# Unit tests for the validation functions.
+# This helps check that the regex works correctly.
+
 import unittest
 from validator import validate_email, validate_phone, validate_student_id
 
